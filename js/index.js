@@ -43,10 +43,12 @@ const siteContent = {
 
 let navArr = document.querySelectorAll("nav a");
 navArr.forEach((link, i) => {
+
   link.innerHTML = siteContent.nav[`nav-item-${i +1}`];
 });
-// let navItems = Array.from(navArr);
 
-// navItems[0].textContent = siteContent.nav-item-1;
-// navItems[1].textContent = siteContent.nav-item-2;
+let ctaImg = document.getElementById(`cta-img`);
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
