@@ -44,7 +44,7 @@ const siteContent = {
 let navArr = document.querySelectorAll("nav a");
 navArr.forEach((link, i) => {
   link.innerHTML = siteContent.nav[`nav-item-${i +1}`];
-})
+});
 // let navItems = Array.from(navArr);
 
 // navItems[0].textContent = siteContent.nav-item-1;
