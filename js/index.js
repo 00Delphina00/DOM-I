@@ -50,9 +50,11 @@ navArr.forEach((link, i) => {
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let ctaHeader = document.getElementsByTagName("h1");
-ctaHeader.innerHTML = siteContent["cta"]["h1"];
-console.log(ctaHeader);
+let ctaHeader = document.querySelector("div h1");
+ctaHeader.textContent = siteContent["cta"]["h1"];
+let ctaButton = document.querySelector("div button");
+ctaButton.textContent = siteContent["cta"]["button"];
+
 
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
