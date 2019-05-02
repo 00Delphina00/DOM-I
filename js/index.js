@@ -47,8 +47,13 @@ navArr.forEach((link, i) => {
   link.innerHTML = siteContent.nav[`nav-item-${i +1}`];
 });
 
-let ctaImg = document.getElementById(`cta-img`);
+let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let ctaHeader = document.getElementsByTagName("h1");
+ctaHeader.innerHTML = siteContent["cta"]["h1"];
+console.log(ctaHeader);
 
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
